@@ -1,0 +1,417 @@
+.project_image{
+    color:white;
+    font-size: larger;
+    font-weight: 900;
+}
+.project_container{
+    display:flex;
+    flex-direction: column;
+    gap:80px;
+    justify-content: space-evenly;
+    object-fit: contain;
+    
+}
+.proj{
+    width:350px;
+    height:500px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 50px;
+    transition: background 0.5s,transform 0.5s;
+    
+}
+.proj:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+.proj h2{
+    font-size: large;
+    font-weight: 600;
+}
+.proj p{
+    font-size: medium;
+    font-weight: 400;
+}
+.top , .bottom{
+    display: flex;
+    gap:20px;
+    justify-content: space-evenly;
+}
+.projects{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: center;
+}
+.coding_image img{
+    width:600px;
+    height: 100%;
+  }
+  .education_title{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  *{
+      margin:0;
+      padding:0;
+      font-family:Arial, Helvetica, sans-serif;
+      box-sizing: border-box;
+      object-fit: contain;
+  }
+  body{
+      background: #080808;
+      color: #fff;
+      object-fit: contain;
+  }
+  .background{
+  
+      width:100%;
+      height:100vh;
+      background-color: #080808;
+      background-size: cover;
+      background-position: center;
+      object-fit: contain;
+      display: flex;
+      flex-direction: column;
+      gap:150px;
+  }
+  .header{
+      display: flex;
+      flex-direction: row;
+      width:100%;
+      height:30px;
+      justify-content: space-between;
+      gap:100px;
+      object-fit: contain;
+  }
+  .right{
+      margin-top: 25px;
+      flex-grow: 1;
+      display: flex;
+      justify-content: space-around;
+  }
+  .content{
+      margin-left:30px;
+      font-size:40px;
+      line-height: 2;
+  
+  }
+  
+  .home-name,.red{
+      color: red;
+  }
+  .about{
+      display: flex;
+      justify-content: space-evenly;
+      object-fit: contain;
+  }
+  .about_information{
+      width:30%;
+      height: 100%;
+      text-align: justify;
+      line-height: 3;
+      font-size: larger;
+      font-weight:700;
+      margin-left:40px;
+      margin-top: 20px;
+  
+  }
+  .skills{
+    justify-content: center;
+      width:100%;
+      font-size: larger;
+      font-weight:700;
+      height: 100%;
+      margin-left: 40px;
+      line-height: 3;
+      display: flex;
+      flex-direction: column;
+  
+      text-align: center;
+      margin: auto;
+      
+    
+  }
+  .skills img{
+    align-items: center;
+    width:500px;
+    height:100px;
+    display: block;
+    margin: 0 auto;
+  }
+  .skills span{
+      color: red;
+  }
+  /* .about_information img{
+      width
+  } */
+  
+  .education{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  .education_container{
+    margin-top:50px;
+    display:flex;
+    justify-content: space-evenly;
+    gap:200px;
+    object-fit: contain;
+  }
+  .masters,.ug {
+    background-color: #262626;
+    width: 600px;
+    height: 350px;
+    padding: 5px;
+    font-size: 13px;
+    font-weight: 300;
+    color: white;
+    align-items: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-right: 10px;
+    transition: background 0.5s,transform 0.5s;
+  }
+  .masters:hover,.ug:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
+  } 
+  
+  .masters img ,.ug img{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  
+  
+  @import url("https://fonts.googleapis.com/css?family=Raleway");
+  
+  :root {
+    --glow-color: hsl(186 100% 69%);
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  .p {
+    height: 50%;
+    width: 100%;
+    /* overflow: hidden; */
+  }
+  
+  .p{
+    height: 70px;
+    display: flex;
+    
+    justify-content: space-between;
+  }
+  
+  .glowing-btn {
+    position: relative;
+    color: var(--glow-color);
+    cursor: pointer;
+    /* padding: 0.15em 0.5em;
+    border: 0.15em solid var(--glow-color); */
+    border-radius: 0.45em;
+    background: none;
+    perspective: 2em;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5em;
+    font-weight:700;
+    letter-spacing: 0.1em;
+  
+    -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+      0px 0px 0.5em 0px var(--glow-color);
+    -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+      0px 0px 0.5em 0px var(--glow-color);
+    box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+      0px 0px 0.5em 0px var(--glow-color);
+    animation: border-flicker 2s linear infinite;
+  }
+  
+  .glowing-txt {
+    float: left;
+    margin-right: -0.8em;
+    -webkit-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+      0 0 0.45em var(--glow-color);
+    -moz-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+      0 0 0.45em var(--glow-color);
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--glow-color);
+    animation: text-flicker 3s linear infinite;
+  }
+  
+  .faulty-letter {
+    opacity: 0.5;
+    animation: faulty-flicker 2s linear infinite;
+  }
+  
+  .glowing-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.7;
+    filter: blur(1em);
+    transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+    background: var(--glow-color);
+    pointer-events: none;
+  }
+  
+  .glowing-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: -1;
+    background-color: var(--glow-color);
+    box-shadow: 0 0 2em 0.2em var(--glow-color);
+    transition: opacity 100ms linear;
+  }
+  
+  .glowing-btn:hover {
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: none;
+    animation: none;
+  }
+  
+  .glowing-btn:hover .glowing-txt {
+    animation: none;
+  }
+  
+  .glowing-btn:hover .faulty-letter {
+    animation: none;
+    text-shadow: none;
+    opacity: 1;
+  }
+  
+  .glowing-btn:hover:before {
+    filter: blur(1.5em);
+    opacity: 1;
+  }
+  
+  .glowing-btn:hover:after {
+    opacity: 1;
+  }
+  
+  @keyframes faulty-flicker {
+    0% {
+      opacity: 0.1;
+    }
+    2% {
+      opacity: 0.1;
+    }
+    4% {
+      opacity: 0.5;
+    }
+    19% {
+      opacity: 0.5;
+    }
+    21% {
+      opacity: 0.1;
+    }
+    23% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 0.5;
+    }
+    83% {
+      opacity: 0.4;
+    }
+  
+    87% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes text-flicker {
+    0% {
+      opacity: 0.1;
+    }
+  
+    2% {
+      opacity: 1;
+    }
+  
+    8% {
+      opacity: 0.1;
+    }
+  
+    9% {
+      opacity: 1;
+    }
+  
+    12% {
+      opacity: 0.1;
+    }
+    20% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 0.3;
+    }
+    30% {
+      opacity: 1;
+    }
+  
+    70% {
+      opacity: 0.7;
+    }
+    72% {
+      opacity: 0.2;
+    }
+  
+    77% {
+      opacity: 0.9;
+    }
+    100% {
+      opacity: 0.9;
+    }
+  }
+  
+  @keyframes border-flicker {
+    0% {
+      opacity: 0.1;
+    }
+    2% {
+      opacity: 1;
+    }
+    4% {
+      opacity: 0.1;
+    }
+  
+    8% {
+      opacity: 1;
+    }
+    70% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .glowing-btn{
+      font-size: 0.5em;
+    }
+  }
+  

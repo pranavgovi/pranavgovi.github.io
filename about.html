@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About me</title>
+<link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+    <div class="background">
+        <div class="header">
+           <div class="left">
+               <img src="images/logo.png">
+           </div>
+           <div class="right">
+             <div class="p">
+               
+              <button class="glowing-btn" onclick="home()"><span class="faulty-letter">H</span>ome</button>
+              <button class="glowing-btn" onclick="about()"><span class="faulty-letter">A</span>bout</button>
+              <button class="glowing-btn" onclick="projects()"><span class="faulty-letter">P</span>rojects</button>
+              <button class="glowing-btn" onclick="research()"><span class="faulty-letter">R</span>esearch</button>
+              <button class="glowing-btn"onclick="exp()"><span class="faulty-letter">E</span>xperience</button>
+              <button class="glowing-btn" onclick="contact()"><span class="faulty-letter">C</span>ontact</button>
+
+               </div>
+
+           </div>
+        </div>
+
+<div class="about">
+    <div class="coding_image">
+      <img src="images/coding_background.jpg">
+    </div>
+    <div class="about_information">
+      <img src="images/about.png"><br>
+      Hi, I am Pranav, and I am currently pursuing a Master's in Computer Science at Florida State University with an overall GPA of <span class="red">4 </span>. I completed my bachelor's in Information technology with a grade of <span class="red">8.96/10 </span>at SSN College of Engineering, Chennai, India. I am a motivated individual working to upskill myself in the fields of web development, machine learning, and data science.
+    </div>
+
+
+</div>
+<div class="skills">
+  <img src="images/skills.png">
+  <div class="main_skills">
+    <h3><span>Programming languages</span>- C, C++, Python, R  </h3>
+    <h3><span>Web technologies</span>-     HTML5, CSS3, Javascript </h3>
+    <h3><span>Frameworks</span>-           Streamlit, Flask, ReactJS, AngularJS, NodeJS, ExpressJS  </h3>
+    <h3><span>Databases</span>-            MongoDB, Sql  </h3>
+    <h3><span>Version control</span>-      Git  </h3>
+    <h3><span>Others-</span>               Agile methodology, Regex, NLP, Web scraping , Image and speech processing</h3>
+</div>
+    
+</div>
+<div class="education">
+  <div class="education_header">
+    <img src="images/education.png">
+  </div>
+  <div class="education_container">
+    <div class="masters">
+        <img src="images/edu_logo.png"><br><br>
+        <h2 class="education_title">Masters</h2>
+        <h2>Florida State University </h2>
+         <h2>Masters in computer science</h2>
+         <h2>GPA: 4/4</h2>
+        <h2>2023-2025</h2>
+        <h2>Tallahassee, FL</h2>
+
+    </div>
+    <div class="ug">
+      <img src="images/edu_logo.png"><br><br>
+        <h2 class="education_title">Undergraduate</h2>
+        <h2>SSN College of Engineering </h2>
+        <h2>Bachelor of Technology in Information Technology</h2>
+        <h2>GPA: 8.96/10</h2>
+       <h2>2019-2023</h2>
+       <h2>Chennai, India</h2>
+
+
+    </div>
+  </div>
+</div>
+<script>
+ function about() {
+  window.location.href = "/about.html";
+};
+function home() {
+  window.location.href = "/";
+}
+function projects() {
+  window.location.href = "/projects.html";
+}
+function research() {
+  window.location.href = "/research.html";
+}
+function exp() {
+  window.location.href = "/experience.html";
+}
+function contact() {
+  window.location.href = "/contact.html";
+}
+</script>
+</body>
+</html>
