@@ -22,10 +22,7 @@
   transition: background 0.5s,transform 0.5s;
   
 }
-.proj:hover{
-  background: #ff004f;
-  transform: translateY(-10px);
-}
+
 .proj h2{
   font-size: large;
   font-weight: 600;
@@ -178,10 +175,7 @@ body{
   border-right: 10px;
   transition: background 0.5s,transform 0.5s;
 }
-.masters:hover,.ug:hover{
-  background: #ff004f;
-  transform: translateY(-10px);
-} 
+
 
 .masters img ,.ug img{
   width: 50px;
